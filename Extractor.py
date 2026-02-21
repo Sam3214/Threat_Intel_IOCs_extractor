@@ -9,7 +9,7 @@ def get_Malpedia_data():
     # Parse the RSS feed
     feed = feedparser.parse(url)
     now = date.today()
-    delta = timedelta(days=3)
+    delta = timedelta(days=5)
     # Iterate over the entries in the feed
     results=[]
     for entry in feed.entries:
@@ -26,4 +26,5 @@ def get_Malpedia_data():
                 results.append(str(title_string))   
         except:
             pass                
-    return results[0]
+    return results
+
