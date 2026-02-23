@@ -1,2 +1,2 @@
+https://www.bitdefender.com/en-us/blog/labs/lummastealer-second-life-castleloader
 https://securelist.com/notepad-supply-chain-attack/118708/
-https://censys.com/blog/asyncrat-c2-activity-at-internet-scale
