@@ -2,33 +2,30 @@
 from Parser import ioc_url_get
 from Extractor import get_Malpedia_data
 
-if __name__ == "__main__":
-    threat_url = get_Malpedia_data()
-    feeds=[]
-    for data in threat_url:
-        feeds.append(data)
-        print("Found articles :",data)
-    with open("IOCs/Threat_URL.txt", "w") as file:
-            file.write('\n'.join(feeds) + '\n')
+threat_url = get_Malpedia_data()
+feeds=[]
+for data in threat_url:
+    feeds.append(data)
+    print("Found article :",data)
+print("Total articles found :",len(feeds))
 
-    for articles in threat_url:
-        response=ioc_url_get(articles)
-        print(f"Extracting IOCs from the article: {articles}")
+if feeds:
+    with open("IOCs/feeds.txt", 'w') as file:
+        for feed in feeds:
+            file.write(feed + "\n")
+
+
+import json
+for feed in feeds:
+    try:
+        response=ioc_url_get(feed)
+        print(response)
         if response["status"]=="success":
-            print("Found IOCs and extracted successfully.")
-            FILE_HASH_SHA256=response["data"]["FILE_HASH_SHA256"]
-            FILE_HASH_SHA1=response["data"]["FILE_HASH_SHA1"]
-            FILE_HASH_MD5=response["data"]["FILE_HASH_MD5"]
-            if FILE_HASH_SHA256:
-                with open("IOCs/FILE_SHA256.txt", 'w') as file:
-                    file.write(f"{articles}:{FILE_HASH_SHA256}\n")
+            with open(f"IOCs/{response['meta']['title']}.json", 'w') as file:
+                json.dump(response, file)
 
-            if FILE_HASH_SHA1:
-                with open("IOCs/FILE_SHA1.txt", "w") as file:
-                    file.write(f"{articles}:{FILE_HASH_SHA1}\n")
+    except Exception as e:
+        print(f"Error processing feed {feed}: {e}")
+        pass
 
-            if FILE_HASH_MD5:
-                with open("IOCs/FILE_MD5.txt", "w") as file:
-                    file.write(f"{articles}:{FILE_HASH_MD5}\n")
-        else:
-            print("No IOCs found or an error occurred during extraction.")
+
