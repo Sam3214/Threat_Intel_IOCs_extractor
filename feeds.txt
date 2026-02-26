@@ -1,0 +1,12 @@
+https://www.abstract.security/blog/contagious-interview-evolution-of-vscode-and-cursor-tasks-infection-chains
+https://disinfo.md/atac-tehnic-discreditare-publica-si-izolare-istoria-unei-companii-it-din-moldova-impinsa-in-afara-pietei-europene/
+https://www.elastic.co/security-labs/mimicrat-custom-rat-mimics-c2-frameworks
+https://www.proofpoint.com/us/blog/threat-insight/dont-trustconnect-its-a-rat
+https://about.gitlab.com/blog/gitlab-threat-intelligence-reveals-north-korean-tradecraft/
+https://cert.pl/posts/2026/02/fake-captcha-in-action/
+https://any.run/cybersecurity-blog/emerging-ransomware-bqtlock-greenblood/
+https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis
+https://github.com/jrm360seclab/aodin-vo1d-malware
+https://blog.sekoia.io/oysterloader-unmasked-the-multi-stage-evasion-loader/
+https://www.levelblue.com/blogs/spiderlabs-blog/how-clickfix-opens-the-door-to-stealthy-stealc-information-stealer
+https://blog.talosintelligence.com/voidlink/
