@@ -3,4 +3,4 @@ https://www.fortinet.com/blog/threat-research/unmasking-agent-tesla-deep-dive-in
 https://www.abstract.security/blog/contagious-interview-evolution-of-vscode-and-cursor-tasks-infection-chains
 https://www.security.com/threat-intelligence/lazarus-medusa-ransomware
 https://www.microsoft.com/en-us/security/blog/2026/02/24/c2-developer-targeting-campaign/
-https://disinfo.md/atac-tehnic-discreditare-publica-si-izolare-istoria-unei-companii-it-din-moldova-impinsa-in-afara-pietei-europene/
+https://disinfo.md/unmasking-agent-tesla-deep-dive-into-multi-stage-campaign/
