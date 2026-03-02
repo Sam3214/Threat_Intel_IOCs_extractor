@@ -1,1 +1,2 @@
 https://raw.githubusercontent.com/eset/malware-ioc/refs/heads/master/promptspy/samples.sha256
+https://raw.githubusercontent.com/eset/malware-ioc/refs/heads/master/ghostchat/samples.sha256
