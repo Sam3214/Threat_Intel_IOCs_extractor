@@ -1,2 +1,3 @@
-https://raw.githubusercontent.com/eset/malware-ioc/refs/heads/master/promptspy/samples.sha256
-https://raw.githubusercontent.com/eset/malware-ioc/refs/heads/master/ghostchat/samples.sha256
+https://kmsec.uk/blog/dprk-text-steganography/
+https://www.fortinet.com/blog/threat-research/unmasking-agent-tesla-deep-dive-into-multi-stage-campaign
+https://www.abstract.security/blog/contagious-interview-evolution-of-vscode-and-cursor-tasks-infection-chains
